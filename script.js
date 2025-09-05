@@ -27,13 +27,13 @@ function init() {
                 case 0:
                     sectionId = "about";
                     break;
+                // case 1:
+                //     sectionId = "skill";
+                //     break;
                 case 1:
-                    sectionId = "skill";
-                    break;
-                case 2:
                     sectionId = "projects";
                     break;
-                case 3:
+                case 2:
                     sectionId = "redes";
                     break;
                 default:
