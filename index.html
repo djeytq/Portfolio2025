@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/skill.css">
+    <link rel="stylesheet" href="CSS/projet.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratica</title>
@@ -33,7 +37,96 @@
         </div>
     </div>
 
-    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#" class="nav" id="one">Sobre Mim</a></li>
+            <li><a href="#" class="nav" id="two">Habilidades</a></li>
+            <li><a href="#" class="nav" id="third">Projetos</a></li>
+            <li  class="active-link"><a href="#" class="nav active" id="four">Redes Sociais</a></li>
+        </ul>
+    </nav>
+
+    <div id="about" class="about-section sec">
+        <h2 style="text-align: center;">Sobre Mim</h2>
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="djey.png" alt="Djuma Capuepue">
+            </div>
+            <div class="about-text">
+                <p>Olá! Sou <strong>Djuma Capuepue</strong>, estudante universitário do 3º ano em Engenharia Informática, apaixonado por tecnologia, design e inovação. Atuo como Programador Web FullStack, Assistente de Designer Gráfico e Social Mídia, além de ser formador de programação web. Busco sempre unir criatividade e técnica para entregar soluções modernas e impactantes.</p>
+                <ul>
+                    <li><b>Formação:</b> Engenharia Informática</li>
+                    <li><b>Experiência:</b> Programação Web, Design Gráfico, Social Mídia</li>
+                    <li><b>Habilidades:</b> HTML, CSS, JavaScript, UI/UX, Branding</li>
+                </ul>
+                <p><strong>Telefone:</strong> +244 931 531 270</p>
+                <p><strong>Email:</strong> djumacapuepue@gmail.com</p>
+                <p><strong>Morada:</strong> Angola, Luanda, Maianga, Casseuqel</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="skill" class="skills-section sec">
+        <h2 style="text-align: center;">Habilidades</h2>
+        <div class="skills-logos">
+            <div class="skill-icon html" title="HTML5"><i class="bi bi-filetype-html"></i><span>HTML5</span></div>
+            <div class="skill-icon css" title="CSS3"><i class="bi bi-filetype-css"></i><span>CSS3</span></div>
+            <div class="skill-icon js" title="JavaScript"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+            <div class="skill-icon react" title="React"><i class="bi bi-lightning"></i><span>React</span></div>
+            <div class="skill-icon node" title="Node.js"><i class="bi bi-cpu"></i><span>Node.js</span></div>
+            <div class="skill-icon figma" title="Figma"><i class="bi bi-easel"></i><span>Figma</span></div>
+            <div class="skill-icon git" title="Git"><i class="bi bi-git"></i><span>Git</span></div>
+            <div class="skill-icon ux" title="UI/UX"><i class="bi bi-palette"></i><span>UI/UX</span></div>
+            <div class="skill-icon mysql" title="MySQL"><i class="bi bi-database"></i><span>MySQL</span></div>
+            <div class="skill-icon postgresql" title="PostgreSQL"><i class="bi bi-database"></i><span>PostgreSQL</span></div>
+            <div class="skill-icon sqlite" title="SQLite"><i class="bi bi-database"></i><span>SQLite</span></div>
+            <div class="skill-icon photoshop" title="Photoshop"><i class="bi bi-brush"></i><span>Photoshop</span></div>
+        </div>
+    </div>
+
+    <div id="projects" class="projects-section sec">
+        <h2 style="text-align: center;">Projetos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="public/projects/LOGOTIPO.png" alt="Projeto 1">
+                <div class="project-overlay">
+                    <h3>Domus Dei</h3>
+                    <p>Sistema de Gestão Eclesiástica, destinada para igrejas, com foco na gestão das informações. <br> Lançado pela TQWEB, na eu fui o programador.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="public/projects/tqweb.png" alt="Projeto 1">
+                <div class="project-overlay">
+                    <h3>TQWEB</h3>
+                    <p>Desenvolvi o site da TQWEB - Tecnologia de Qualidade Web, startup na qual eu trabalho como programador.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="public/projects/ajoedac.png" alt="Projeto 1">
+                <div class="project-overlay">
+                    <h3>AJOEDAC</h3>
+                    <p>Desenvolvi um site e um Dashbord para esta Associação, É um projeto FullStack, na qual usei Nodejs no backEnd.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="public/projects/biblioteca.png" alt="Projeto 1">
+                <div class="project-overlay">
+                    <h3>Bibliotéca Compartilhada</h3>
+                    <p>Foi me solicitado a pedido de dois estudantes do ensino médio de gestão de informática a fazer uma API para o pequeno projeto deles.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="djey.png" alt="Projeto 2">
+                <div class="project-overlay">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do Projeto 2, com foco em design e experiência.</p>
+                </div>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+    </div>
+
+    <div class="container sec" id="redes">
         <div class="content">
             <div class="retangulo face">
                 <a href="#" class="icon facebook"><i class="bi bi-facebook"></i></a>
@@ -54,7 +147,6 @@
                 </div>
             </div>
             <div class="retangulo link">
-                <i class="bi bi-alarm"></i>
                 <a href="#" class="icon linkedin"><i class="bi bi-linkedin"></i></a>
                 <div class="content-body">
                     <p>LinkeDin</p>
@@ -62,6 +154,9 @@
             </div>
         </div>
     </div>
+
+    <p style="margin-top: 50px; color: #fff; text-align: center;" >2025 &copy; Todos Direitos Reservados | Desenvolvido pela <strong>TQWEB</strong></p>
     
+    <script src="script.js"></script>
 </body>
 </html>

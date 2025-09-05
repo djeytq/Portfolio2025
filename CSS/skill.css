@@ -1,0 +1,97 @@
+/* Seção de Habilidades com animação */
+.skills-section {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    margin: 40px auto 60px auto;
+    max-width: 900px;
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-section h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.skills-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    /* animation: moveSkills 18s linear infinite; */
+}
+@keyframes moveSkills {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-20%); }
+}
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 18px 16px 10px 16px;
+    min-width: 90px;
+    min-height: 90px;
+    font-size: 2.2rem;
+    color: #555;
+    transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 8px;
+    animation: float 2.5s ease-in-out infinite alternate;
+}
+.html, .js, .node, .git, .mysql, .sqlite{
+    animation: float 2.5s 1.5s ease-in-out infinite alternate;
+}
+.skill-icon span {
+    font-size: 1rem;
+    color: #222;
+    margin-top: 8px;
+    font-weight: 500;
+}
+.skill-icon:hover {
+    transform: scale(1.13) rotate(-3deg);
+    color: #007bff;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+    z-index: 2;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-18px); }
+}
+/* Cores específicas para cada tecnologia */
+.skill-icon.html { color: #e44d26; }
+.skill-icon.css { color: #1572b6; }
+.skill-icon.js { color: #f7df1e; }
+.skill-icon.react { color: #61dafb; }
+.skill-icon.node { color: #3c873a; }
+.skill-icon.figma { color: #a259ff; }
+.skill-icon.git { color: #f34f29; }
+.skill-icon.ux { color: #ffb400; }
+.skill-icon.mysql { color: #00758f; }
+.skill-icon.postgresql { color: #336791; }
+.skill-icon.sqlite { color: #003b57; }
+.skill-icon.photoshop { color: #001e36; }
+@media (max-width: 700px) {
+    .skills-section {
+        padding: 24px 8px;
+    }
+    .skills-logos {
+        gap: 16px;
+    }
+    .skill-icon {
+        min-width: 70px;
+        min-height: 70px;
+        font-size: 1.5rem;
+    }
+}
