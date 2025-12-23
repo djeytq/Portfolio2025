@@ -16,8 +16,8 @@ function showSection(sectionId, li) {
 }
 
 function init() {
-    // Exibe a seção de redes sociais por padrão
-    showSection("redes", document.querySelector("nav ul li:nth-child(4)"));
+    // Exibe a seção "Sobre Mim" por padrão
+    showSection("about", document.querySelector("nav ul li:nth-child(1)"));
 
     navLis.forEach((li, idx) => {
         li.addEventListener("click", function (e) {

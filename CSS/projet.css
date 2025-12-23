@@ -76,6 +76,18 @@
     font-size: 1rem;
     color: #e0e0e0;
 }
+.project-overlay a{
+    padding: 3px 12px;
+    background: #fff;
+    color: #121212;
+    font-weight: 600;
+    border-radius: 100px;
+
+    &:hover {
+        background: #161123;
+        color: #fff;
+    }
+}
 @media (max-width: 900px) {
     .projects-grid {
         gap: 18px;
